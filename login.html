@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="my profile.html">HOME</a></li>
+                    <li><a href="about us.html"> ABOUT US</a></li>
+                   <li><a href="home.html">DISHES WE OFFER</a></li>
+                    <li><a href="order.html">ORDER</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="signup.html">SIGN UP</a></li>
+                </ul>
+            </nav>
+            <h1 class="kitchen-name">LOGIN PAGE</h1>
+       </header>
+        <section class="login-section">
+            <form action="sumaiyahalayaki@gmail.com" class="login-form">
+                USERNAME: <input type="text"  id="username"><br><br>
+                PASSWORD: <input type="password"  id="PASSWORD">
+                <p id="paragraph"></p>
+            </form>
+        </section>
+    </body>
+    <footer class="login-footer">
+        <button class="login-button" onclick="myFunction(event)"><a href="payment.html">LOGIN</a></button><br><br>
+        Don't have an account? <a href="signup.html">Sign Up</a>
+    </footer>
+    <script>
+        function myFunction() {
+        let password = document.getElementById("PASSWORD");
+        let username = document.getElementById("username");
+        const paragraph = document.getElementById("paragraph");
+        if(password.value.match("[a-z]") && password.value.length <= 13 && password.value.match("[0-9]") && username.value.length >= 5){
+            
+        } else {
+            event.preventDefault()
+     paragraph.innerHTML = "please your input should be less than or equal to 13 and should contain a number";
+        }
+
+        }
+    </script>
+</html>

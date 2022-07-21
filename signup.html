@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>signup</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="my profile.html">HOME</a></li>
+                    <li><a href="about us.html"> ABOUT US</a></li>
+                   <li><a href="home.html">DISHES WE OFFER</a></li>
+                    <li><a href="order.html">ORDER</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="signup.html">SIGN UP</a></li>
+                </ul>
+            </nav>
+            <h1 class="kitchen-name">SIGN UP</h1>
+       </header>
+        <section class="sign">
+        <form class="form">
+            <p class="name">FULL NAME: <input type="text" name="full name" id="full-name"><br></p>
+            <p class="name">USERNAME: <input type="text" name="full name" id="user-name"><br></p>
+            <p class="number">PHONE NUMBER: <input type="number" name="phone number" id="phone-number"><br></p>
+            <p class="email">EMAIL: <input type="email" name="email" id="email"><br></p>
+            <p class="password">PASSWORD: <input type="password" name="password" id="password"><br></p>
+            <p class="confirm password">CONFIRM PASSWORD: <input type="password" name="password" id="confirm-password"><br></p>
+            <code id="my-list" style="color: red;font-size : 10px;"></code>
+        </form>
+        </section>
+    </body>
+    <footer class="signup">
+         <a onclick="myFunction(event)" href="login.html"><input type="button" value="SIGN UP"></a>
+    </footer>
+    <script>
+        function myFunction() {
+        let fullname = document.querySelector("#full-name");
+        let username = document.querySelector("#user-name");
+        let number = document.querySelector("#phone-number");
+        let email = document.querySelector("#email");
+        let password = document.querySelector("#password");
+        let confirmPassword = document.querySelector("#confirm-password");
+        if(fullname.value.length > 1 && username.value.length >=5 && password.value.match("[a-z]") && password.value.length <= 13 && password.value.match("[0-9]") && email.value.match("[a-z]") && email.value.includes("@") && number.value.length === 11 && confirmPassword.value == password.value) {
+
+        } else {
+            event.preventDefault()
+            let list = document.querySelector("#my-list");
+           list.innerHTML = "password should be equal to or less than 13 and should contain a number" + "," + "username should be greater than 5"
+        }
+    }
+    </script>
+</html>

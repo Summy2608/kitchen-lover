@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>order</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="my profile.html">HOME</a></li>
+                <li><a href="about us.html"> ABOUT US</a></li>
+               <li><a href="home.html">DISHES WE OFFER</a></li>
+                <li><a href="order.html">ORDER</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="signup.html">SIGN UP</a></li>
+            </ul>
+        </nav>
+        <h1 class="kitchen-name">THE KITCHEN LOVER</h1>
+   </header>
+    <section class="order">
+        <p class="paragraph">SELECT DISHES: <br><br>
+<input type="checkbox"  id="ofada">OFADA RICE &NonBreakingSpace; <button onclick="incFunction()" id="">+</button><span id="span1">0</span><button onclick="decFunction()">-</button><br><br>
+<input type="checkbox"  id="yam">YAM PORRIDGE &NonBreakingSpace; <button onclick="incrFunction()" id="">+</button><span id="span2">0</span><button onclick="decrFunction()">-</button><br><br>
+<input type="checkbox"  id="iyan">IYAN AND EGUSI SOUP &NonBreakingSpace; <button id="" onclick="increFunction()">+</button><span id="span3">0</span><button onclick="decreFunction()">-</button><br><br>
+<input type="checkbox"  id="amala">AMALA AND ABULA  &NonBreakingSpace; <button id="" onclick="incremFunction()">+</button><span id="span4">0</span><button onclick="decremFunction()">-</button><br><br>
+<input type="checkbox"  id="ewa">EWA AGANYIN  &NonBreakingSpace; <button id=""  onclick="incremeFunction()">+</button><span id="span5">0</span><button  onclick="decremeFunction()">-</button><br><br>
+<input type="checkbox"  id="eba">EBA AND EGUSI  &NonBreakingSpace; <button id="" onclick="incremenFunction()">+</button><span id="span6">0</span><button onclick="decremenFunction()">-</button><br><br>
+<input type="checkbox"  id="pasta">SHRIMP ASPARAGUS PASTA  &NonBreakingSpace; <button id="" onclick="incrementFunction()">+</button><span id="span7">0</span><button onclick="decrementFunction()">-</button><br><br>
+<input type="checkbox"  id="rice">COCONUT RICE  &NonBreakingSpace; <button id="" onclick="incrementsFunction()">+</button><span id="span8">0</span><button onclick="decrementsFunction()">-</button><br><br>
+<input type="checkbox"  id="potato">POTATO SALAD  &NonBreakingSpace; <button id="" onclick="incrementssFunction()">+</button><span id="span9">0</span><button onclick="decrementssFunction()">-</button><br><br>
+        </p>
+    </section>
+</body>
+<footer class="footer">
+   <a href="login.html"><input type="button" value="MAKE PAYMENT"></a> 
+</footer>
+<script>
+    var  d = 0;
+    var e = 0;
+    var c = 0;
+    var b = 0;
+    var g = 0;
+    var h = 0;
+    var i = 0;
+    var j = 0;
+    var k = 0;
+    function incFunction() {
+d++
+document.getElementById("span1").innerHTML = d
+    }
+    function decFunction() {
+        d--
+        document.getElementById("span1").innerHTML = d
+
+    }
+    function incrFunction() {
+e++
+document.getElementById("span2").innerHTML = e
+    }
+    function decrFunction() {
+        e--
+        document.getElementById("span2").innerHTML = e
+
+    }
+    function increFunction() {
+c++
+document.getElementById("span3").innerHTML = c
+    }
+    function decreFunction() {
+        c--
+        document.getElementById("span3").innerHTML = c
+
+    }
+    function incremFunction() {
+b++
+document.getElementById("span4").innerHTML = b
+    }
+    function decremFunction() {
+        b--
+        document.getElementById("span4").innerHTML = b
+
+    }
+    function incremeFunction() {
+g++
+document.getElementById("span5").innerHTML = g
+    }
+    function decremeFunction() {
+        g--
+        document.getElementById("span5").innerHTML = g
+
+    }
+    function incremenFunction() {
+h++
+document.getElementById("span6").innerHTML = h
+    }
+    function decremenFunction() {
+        h--
+        document.getElementById("span6").innerHTML = h
+
+    }
+    function incrementFunction() {
+i++
+document.getElementById("span7").innerHTML = i
+    }
+    function decrementFunction() {
+        i--
+        document.getElementById("span7").innerHTML = i
+
+    }
+    function incrementsFunction() {
+k++
+document.getElementById("span8").innerHTML = k
+    }
+    function decrementsFunction() {
+        k--
+        document.getElementById("span8").innerHTML = k
+
+    }
+    function incrementssFunction() {
+j++
+document.getElementById("span9").innerHTML = j
+    }
+    function decrementssFunction() {
+        j--
+        document.getElementById("span9").innerHTML = j
+
+    }
+</script>
+</html>
